@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تسجيل حساب جديد</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background-color: #006400;
+      color: gold;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .form-container {
+      background: white;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      background-color: gold;
+      color: black;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .note {
+      font-size: 14px;
+      color: gray;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>تسجيل حساب جديد</header>
+
+  <div class="form-container">
+    <form>
+      <label>الاسم الكامل:</label>
+      <input type="text" placeholder="أدخل اسمك الكامل" required />
+
+      <label>رقم الهاتف:</label>
+      <input type="tel" placeholder="010XXXXXXXX" required />
+
+      <label>كلمة المرور:</label>
+      <input type="password" placeholder="********" required />
+
+      <label>كود الإحالة (اختياري):</label>
+      <input type="text" placeholder="مثال: 1234" />
+
+      <button type="submit">سجّل الآن</button>
+    </form>
+
+    <div class="note">
+      بعد التسجيل سيتم التواصل معك على واتساب لتفعيل الحساب يدويًا.
+    </div>
+  </div>
+
+</body>
+</html>
